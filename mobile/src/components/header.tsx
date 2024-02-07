@@ -21,7 +21,7 @@ export function Header({ title, cartQuantityItems = 0 }: HeaderProps) {
         <TouchableOpacity
           className="relative"
           activeOpacity={0.7}>
-          <View className="bg-lime-300 w-4 h-4 rounded-full items-center justify-center top-2 z-10 -right-3.5">
+          <View className="bg-lime-300 w-[18] h-[18] rounded-full items-center justify-center top-2 z-10 -right-3.5">
             <Text className="text-slate-900 font-bold text-xs">
               {cartQuantityItems}
             </Text>
@@ -29,7 +29,7 @@ export function Header({ title, cartQuantityItems = 0 }: HeaderProps) {
           <Feather
             name="shopping-bag"
             color={colors.slate[100]}
-            size={24} />
+            size={25} />
         </TouchableOpacity>
       )}
     </View>
